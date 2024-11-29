@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclone Fengal Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌀 Cyclone Fengal Tracker</h1>
+            <p class="subtitle">Real-time weather monitoring and emergency information for Chennai region</p>
+        </header>
+        <main>
+            <div id="map"></div>
+            <div id="cyclone-list"></div>
+        </main>
+        
+        <div class="relief-info">
+            <h3><i class="fas fa-hands-helping"></i> Emergency Relief Information</h3>
+            <div class="relief-grid">
+                <div class="relief-card">
+                    <h4><i class="fas fa-phone-alt"></i> Emergency Contacts</h4>
+                    <ul>
+                        <li>Emergency Control Room: 1070</li>
+                        <li>State Emergency: 044-28593990</li>
+                        <li>Ambulance: 108</li>
+                        <li>Police: 100</li>
+                        <li>Fire Service: 101</li>
+                    </ul>
+                </div>
+                
+                <div class="relief-card">
+                    <h4><i class="fas fa-hospital"></i> Relief Centers</h4>
+                    <ul>
+                        <li>Chennai Corporation Centers</li>
+                        <li>Government Schools</li>
+                        <li>Community Halls</li>
+                        <li>Local Shelters</li>
+                    </ul>
+                </div>
+
+                <div class="relief-card">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Safety Guidelines</h4>
+                    <ul>
+                        <li>Stay indoors during severe weather</li>
+                        <li>Keep emergency kit ready</li>
+                        <li>Follow official instructions</li>
+                        <li>Avoid flood-prone areas</li>
+                    </ul>
+                </div>
+
+                <div class="relief-card">
+                    <h4><i class="fas fa-first-aid"></i> Emergency Kit</h4>
+                    <ul>
+                        <li>Drinking water and non-perishable food</li>
+                        <li>First aid supplies</li>
+                        <li>Battery-powered radio</li>
+                        <li>Flashlights and batteries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Data updates every 5 minutes | Last update: <span id="last-update"></span></p>
+            <p class="emergency-note">For immediate assistance during emergencies, dial 1070</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
